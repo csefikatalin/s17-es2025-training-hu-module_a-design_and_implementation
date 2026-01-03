@@ -1,0 +1,157 @@
+/* benefits */
+.benefits .icon {
+  width: 100px;
+}
+
+.card {
+  border: 1px solid var(--BorderColor);
+  background-color: var(--White);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.card:hover {
+  transform: translateY(-5px); /* enyhe emelkedés */
+  box-shadow: rgba(0, 0, 0, 0.15) 0 8px 20px; /* nagyobb, lágyabb árnyék */
+}
+
+.credits-earned,
+.earn-credits {
+  /*  Cyan → Green gradient pill shape */
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, rgb(61, 166, 226), rgb(23, 134, 51));
+}
+.mentor-rates {
+  /* Mentor Rates: Purple → Orange gradient badge */
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, purple, orange);
+}
+/* featured */
+.stars {
+  display: inline-block;
+  font-size: 24px;
+  color: var(--TextSecondary); /* alap csillag szín */
+  position: relative;
+}
+.star.full {
+  color: gold;
+}
+.star.partial {
+  position: relative;
+  color: var(--TextSecondary); /* alap */
+}
+.star.o9::before {
+  content: "★";
+  color: gold;
+  position: absolute;
+  width: 90%; /* 4.9 → 90% kitöltés */
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+.star.o8::before {
+  content: "★";
+  color: gold;
+  position: absolute;
+  width: 60%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+.star.o7::before {
+  content: "★";
+  color: gold;
+  position: absolute;
+  width: 40%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
+.earn-credits {
+  padding: 10px;
+  background: linear-gradient(90deg, rgb(61, 166, 226), rgb(23, 134, 51));
+}
+
+.featured-courses .button {
+  text-align: center;
+  padding: 20px;
+}
+/* .card img{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}  */
+
+.featured-courses .card {
+  padding: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.testimonials .card {
+  text-align: center;
+  border-radius: 15px;
+  color: var(--TextSecondary);
+  border-left: 5px solid var(--PrimaryPurple);
+}
+.testimonials .card p:first-child {
+  text-align: center;
+  font-style: italic;
+  color: var(--TextSecondary);
+}
+.testimonials .card p:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+.testimonials .card p:last-child {
+  text-align: center;
+  font-weight: bold;
+  color: var(--TextSecondary);
+}
+
+footer .icon {
+  width: 30px;
+  border-radius: 5px;
+}
+.fb {
+  background-color: rgb(24, 119, 242);
+}
+.insta {
+  background: linear-gradient(
+    45deg,
+    #feda75 0%,
+    #fa7e1e 25%,
+    #d62976 50%,
+    #962fbf 75%,
+    #4f5bd5 100%
+  );
+}
+.tw {
+  background-color: #1da1f2;
+}
+.linkedin {
+  background-color: rgb(10, 102, 194);
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul a {
+  text-decoration: none;
+}
+
+.all-courses .kep {
+  max-height: 200px;
+  overflow: hidden;
+}
